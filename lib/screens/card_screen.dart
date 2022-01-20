@@ -11,11 +11,14 @@ class CardScreen extends StatelessWidget {
       appBar: AppBar(title: const Text('Card widget')),
       body: ListView(children: const [
         CustomCardTipeOne(),
-        CustomCardTypeTwo(),
-        CustomCardTypeTwo(),
-        CustomCardTypeTwo(),
-        CustomCardTypeTwo(),
-        CustomCardTypeTwo(),
+        CustomCardTypeTwo(
+          username: 'bzapata95',
+        ),
+        CustomCardTypeTwo(username: 'zenorocha'),
+        CustomCardTypeTwo(username: 'guilherme'),
+        CustomCardTypeTwo(username: 'guilhermerodz'),
+        CustomCardTypeTwo(username: 'diego3g'),
+        CustomCardTypeTwo(username: 'LauraBeatris'),
         SizedBox(
           height: 100,
         )
