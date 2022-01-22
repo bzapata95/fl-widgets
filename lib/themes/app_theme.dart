@@ -7,5 +7,15 @@ class AppTheme {
       primaryColor: primary,
       appBarTheme: const AppBarTheme(backgroundColor: primary, elevation: 0),
       textButtonTheme:
-          TextButtonThemeData(style: TextButton.styleFrom(primary: primary)));
+          TextButtonThemeData(style: TextButton.styleFrom(primary: primary)),
+      floatingActionButtonTheme: const FloatingActionButtonThemeData(
+        backgroundColor: primary,
+        elevation: 5,
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+        shape: const StadiumBorder(),
+        primary: primary,
+        elevation: 0,
+      )));
 }
