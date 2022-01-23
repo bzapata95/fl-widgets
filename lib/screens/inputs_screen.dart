@@ -34,7 +34,7 @@ class InputsScreen extends StatelessWidget {
                     helperText: 'Solo letras',
                     suffixIcon: Icon(Icons.group_add_outlined))),
             DropdownButtonFormField(
-                items: [
+                items: const [
                   DropdownMenuItem(value: 'Admin', child: Text('Admin')),
                   DropdownMenuItem(
                       value: 'Superuser', child: Text('Superuser')),
