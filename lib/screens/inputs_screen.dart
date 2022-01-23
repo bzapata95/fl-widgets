@@ -33,6 +33,16 @@ class InputsScreen extends StatelessWidget {
                     labelText: 'Usuario',
                     helperText: 'Solo letras',
                     suffixIcon: Icon(Icons.group_add_outlined))),
+            DropdownButtonFormField(
+                items: [
+                  DropdownMenuItem(value: 'Admin', child: Text('Admin')),
+                  DropdownMenuItem(
+                      value: 'Superuser', child: Text('Superuser')),
+                  DropdownMenuItem(value: 'Junior', child: Text('Junior')),
+                ],
+                onChanged: (value) {
+                  print(value);
+                }),
             ElevatedButton(
                 child: const SizedBox(
                   width: double.infinity,
@@ -48,7 +58,7 @@ class InputsScreen extends StatelessWidget {
                   }
 
                   print('form values:');
-                })
+                }),
           ]),
         ),
       )),
